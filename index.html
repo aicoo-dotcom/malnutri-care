@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deteksi Malnutrisi Anak</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+    <div class="card shadow-lg p-4">
+      <h2 class="text-center mb-4">📸 Deteksi Status Gizi Anak</h2>
+      <form action="/predict" method="post" enctype="multipart/form-data">
+        <div class="mb-3 text-center">
+          <input type="file" name="file" class="form-control" required>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">🔍 Prediksi</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
